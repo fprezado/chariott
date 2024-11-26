@@ -85,7 +85,7 @@ jobs:
           docker logs intent_brokering
 
       - name: Archive Intent Brokering log output
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: Intent Brokering E2E log
           path: intent_brokering.log
