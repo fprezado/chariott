@@ -5,11 +5,11 @@ edition = "2021"
 license = "MIT"
 
 [dependencies]
-bollard = "0.16"
+bollard = "0.18"
 intent_brokering_common = { workspace = true }
 examples-common = { path = "../../common/" }
 futures-util = "0.3"
-metrics-util = "0.17"
+metrics-util = "0.18"
 serde = { workspace = true }
 serde_json = { workspace = true }
 tokio = { workspace = true }
