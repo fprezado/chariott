@@ -75,7 +75,7 @@ jobs:
           version: '0.21.0'
           args: '--workspace --ignore-tests --skip-clean --exclude-files spikes/* --exclude-files examples/* --exclude-files tests/*'
       - name: Archive code coverage results
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
           path: cobertura.xml
