@@ -10,7 +10,7 @@ license = "MIT"
 
 [dependencies]
 parking_lot = { workspace = true }
-prost = { workspace = true }
+prost.workspace = true
 service_discovery_proto = { path = "../proto_build/"}
 tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
 tonic = { workspace = true }

@@ -36,6 +36,12 @@ test-case = { workspace = true }
 [build-dependencies]
 tonic-build = { workspace = true }
 
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = [
+    'cfg(build, values("debug"))',
+    'cfg(tarpaulin_include)',
+] }
+
 [[test]]
 name = "store-e2e"
 test = false

@@ -14,7 +14,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 
 fn compile_with_common(path: &str) -> Result<(), Box<dyn Error>> {
-    configure().compile(&[Path::new(path)], &[Path::new("../proto/")])?;
+    configure().compile_protos(&[Path::new(path)], &[Path::new("../proto/")])?;
 
     Ok(())
 }
