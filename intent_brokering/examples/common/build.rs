@@ -6,7 +6,7 @@ use std::{error::Error, path::Path};
 use tonic_build::configure;
 
 fn main() -> Result<(), Box<dyn Error>> {
-    configure().compile(
+    configure().compile_protos(
         &[Path::new("../applications/proto/examples/detection/v1/detection.proto")],
         &[Path::new("../../proto/"), Path::new("../applications/proto/examples/detection/v1/")],
     )?;

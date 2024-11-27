@@ -19,7 +19,7 @@ members = [
     "intent_brokering/proto.rs",
     "service_discovery/core",
     "service_discovery/samples/simple-discovery/consumer",
-    "service_discovery/samples/simple-discovery/provider"
+    "service_discovery/samples/simple-discovery/provider",
 ]
 
 [workspace.dependencies]
@@ -38,13 +38,13 @@ serde_json = "1.0.133"
 tokio = { version = "1.41", features = ["macros"] }
 tokio-util = "0.7"
 tokio-stream = { version = "0.1", features = ["net"] }
-tonic = "0.11"
-tonic-build = "0.10"
+tonic = "0.12.3"
+tonic-build = "0.12.3"
 tracing = { version = "0.1" }
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 uuid = { version = "1.11.0", features = ["v4"] }
 url = "2.5"
-test-case = "2.2.2"
+test-case = "3.3.1"
 
 [profile.release]
 strip = true
