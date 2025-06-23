@@ -1,0 +1,5 @@
+[advisories]
+# Ignore specific vulnerability IDs for unmaintained but necessary crates
+ignore = [
+    "RUSTSEC-2024-0370",  # proc-macro-error is unmaintained
+]
