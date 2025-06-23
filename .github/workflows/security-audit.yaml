@@ -20,4 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: cargo audit -D warnings
+      # Ignored advisories:
+      # check .cargo/audit.toml for more
+      - run: |
+          cargo audit --deny warnings

@@ -2,7 +2,7 @@
 DEFAULT_INTENT_BROKER_URL = "http://0.0.0.0:4243"
 
 [target.'cfg(all())']
-rustflags = ["-D", "warnings"]
+rustflags = ["-D", "warnings", "--check-cfg", "cfg(tarpaulin_include)", "--check-cfg", "cfg(build, values(\"debug\"))"]
 
 [target.aarch64-unknown-linux-musl]
 linker = "aarch64-linux-gnu-gcc"
